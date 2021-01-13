@@ -1,0 +1,99 @@
+@import 'utils/normalize';
+@import 'utils/grid';
+@import 'utils/colors';
+@import 'utils/fonts';
+
+// @import 'components/home';
+// @import 'components/currencies-list';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include fontRobotoRegular;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: #999;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.convert-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    margin: 20px;
+  }
+}
+
+.currencies-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    width: 70%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background: #999;
+    border-radius: 5px;
+  }
+}
+
+.copyright {
+  margin-top: auto;
+}
